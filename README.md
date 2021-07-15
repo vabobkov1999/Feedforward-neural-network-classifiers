@@ -24,7 +24,7 @@
   <img src="https://vitalflux.com/wp-content/uploads/2020/10/feed_forward_neural_network-1.gif" />
 </p>
 
-Свёрточная нейронная сеть, это такая же нейронная сеть, но прежде чем подать данные их предвательно обрабатывают для получения вектора фитч. CNN(Convolutional Neural Network)-предварительная обработка данных.
+Свёрточная нейронная сеть - это такая же нейронная сеть, но прежде чем подать данные их предвательно обрабатывают для получения вектора фитч. CNN(Convolutional Neural Network)-предварительная обработка данных.
 
 <p align="center">
   <img src="https://miro.medium.com/max/1000/1*BIpRgx5FsEMhr1k2EqBKFg.gif" />
