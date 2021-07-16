@@ -35,7 +35,7 @@
 * Детекция – задача, в рамках которой необходимо выделить несколько объектов на изображении посредством нахождения координат их ограничивающих рамок и классификации этих ограничивающих рамок из множества заранее известных классов.
 
 <p align="center">
-  <img src="https://miro.medium.com/max/1200/1*uiw0Jg28CwRJAcsMvH8EjQ.gif" />
+  <img src="http://download.smartlife.global/files/face-recog-4.gif" />
 </p>
 
 * Сегментация - поиск групп пикселей, каждая из которых обладает определенными признаками.
@@ -43,7 +43,7 @@
 который трансформирует исходное изображение в какое-то другое, и это можно делать много раз.
 
 <p align="center">
-  <img src="https://www.jeremyjordan.me/content/images/2018/05/deeplabcityscape.gif" />
+  <img src="https://s3-us-west-2.amazonaws.com/static.pyimagesearch.com/opencv-mask-rcnn/mask_rcnn_example03.gif" />
 </p>
 
 * Слои субдискретизации (Subsampling или Pooling) просто уменьшают размер изображения: было 200х200 ps, после Subsampling стало 32х32 ps. По сути, усреднение.
