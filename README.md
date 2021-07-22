@@ -45,7 +45,20 @@ random_state=seed принцип деления данных по законом
 LabelBinarizer метод который к каждому классу дает вектор, если классов 5 то вектор длинны 5
 
 Sequential создание нейронки
-add добавляю слои 
+add добавляю слои
+Dense спрятанный слой
+activation="sigmoid функция активации
+EPOCHS = 20 инициализация эпох
+model.summary() архитектура нейронки
+
+оценка нейросети
+
+ строим графики потерь и точности
+ метод history
+ test_labels = os.listdir(test_path) запоминание названий картинок
+ запоминаем путь считываем его
+
+ predictions = model.predict(image) вектор вероятности 
 
 
 #### Convolutional Neural Network
