@@ -58,7 +58,12 @@ model.summary() архитектура нейронки
  test_labels = os.listdir(test_path) запоминание названий картинок
  запоминаем путь считываем его
 
- predictions = model.predict(image) вектор вероятности 
+ predictions = model.predict(image) вектор вероятности
+
+Метод lb.classes запоминает и что-то там уникальные индефикаторы
+
+выводим название класса и вероятность принадлежности на картинку 
+
 
 
 #### Convolutional Neural Network
