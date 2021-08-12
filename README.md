@@ -189,13 +189,12 @@ test_labels = os.listdir(test_path)
    image = cv2.resize(image, (32, 32)).flatten()
  ```
 
- predictions = model.predict(image) вектор вероятности запихиваем данные в модель
 
-Метод lb.classes запоминает и что-то там уникальные индефикаторы>
+Выводим название класса и вероятность принадлежности на картинку.
 
-выводим название класса и вероятность принадлежности на картинку.
+ ```python
 text = f'{label}: {round(predictions[0][i] * 100, 2)}%'
-
+ ```
 
 
 #### Convolutional Neural Network
