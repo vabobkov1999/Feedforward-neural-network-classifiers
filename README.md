@@ -200,8 +200,29 @@ text = f'{label}: {round(predictions[0][i] * 100, 2)}%'
 cv2.imwrite(path_for_save, image_copy)
 ```
 
+#### Нейронная сеть прямого распространения
 
-#### Convolutional Neural Network
+
+
+![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_model.png)
+
+
+Оценка полноты, точности и аккуратности
+
+
+![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_accuracy.png)
+
+График потерь и точности для каждой модели
+
+
+![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn__epoch_20_.png)
+
+![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn.png)
+
+
+
+
+### Convolutional Neural Network
 
 Свёрточная нейронная сеть - это такая же нейронная сеть, но прежде чем подать данные их предварительно обрабатывают для получения вектора фитч. CNN(Convolutional Neural Network)-предварительная обработка данных.
 
@@ -261,29 +282,6 @@ model.add(Flatten())
 ```
 
 А дальше мы делаем все тоже самое как и с FFNN.
-   
-
-### Результат выполнения программы
-
-#### Нейронная сеть прямого распространения
-
-
-
-![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_model.png)
-
-
-Оценка полноты, точности и аккуратности
-
-
-![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_accuracy.png)
-
-График потерь и точности для каждой модели
-
-
-![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn__epoch_20_.png)
-
-![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn.png)
-
 
 
 #### Свёрточная нейронная сеть
