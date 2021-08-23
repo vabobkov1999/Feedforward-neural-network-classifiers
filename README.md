@@ -211,27 +211,17 @@ cv2.imwrite(path_for_save, image_copy)
 #### Результат работы программы для FFNN
 
 
-<p align="center">
-  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_model.png"height="400" width="400"/>
-</p>
+![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_model.png)
 
 Оценка полноты, точности и аккуратности
 
-<p align="center">
-  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_accuracy.png"height="400" width="400"/>
-</p>
+![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_accuracy.png)
 
 График потерь и точности для каждой модели
 
-<p align="center">
-  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn__epoch_20_.png"height="400" width="400"/>
-</p>
+![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn__epoch_20_.png)
 
 ![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn.png)
-<p align="center">
-  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn.png"height="400" width="400"/>
-</p>
-
 
 
 
@@ -276,20 +266,21 @@ cv2.imwrite(path_for_save, image_copy)
 
 Изображения не загружаются в массив, то есть остаётся матрица 32х32х3 с которой будем работать.
 
-В файле с CNN практически тоже самое, что в FFNN пока не доходим до создания архитектуры с использованием модели Sequential.
-Conv2D это слой свёртки. Идея свёртки такая, что сначала задаём какую-то матрицу с помощью которой получаем набор других матриц.Параметр kernel_size - это размер свёртки. Выходные фильтры будут иметь такую же размерность, как и входные фильтры.
+В файле convolution_neural_network практически всё тоже самое, что в файле feed_forward_neural_network. И там и там содержится программа программа для классификации изображений на основе нейронной сети.Но стоит дойти до создания архитектуры с использованием модели Sequential, тут и начинаются отличия.
+
+1. Conv2D это слой свёртки. Идея свёртки такая, что сначала задаём какую-то матрицу с помощью которой получаем набор других матриц.Параметр kernel_size - это размер свёртки. Выходные фильтры будут иметь такую же размерность, как и входные фильтры.
 
 ```python
 model.add(Conv2D(filters=64, kernel_size=(5, 5), padding="same", activation="relu", input_shape=(32, 32, 3)))
 ```
 
-Метод MaxPooling2D обрезает матрицу в два раза по оси Х и Y. Он делит матрицу на квадраты 2х2 и в каждом таком квадрате сохраняет максимальное число.
+2. Метод MaxPooling2D обрезает матрицу в два раза по оси Х и Y. Он делит матрицу на квадраты 2х2 и в каждом таком квадрате сохраняет максимальное число.
 
 ```python
 model.add(MaxPooling2D(pool_size=(2, 2)))
 ```
 
-На выходе получается вектор длинны 1024 и с помощью метода Flatten вытягиваем и получаем входные данные .
+3. На выходе получается вектор длинны 1024 и с помощью метода Flatten вытягиваем и получаем входные данные .
 
 ```python
 model.add(Flatten())
