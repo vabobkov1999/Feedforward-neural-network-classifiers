@@ -211,20 +211,26 @@ cv2.imwrite(path_for_save, image_copy)
 #### Результат работы программы для FFNN
 
 
-![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_model.png)
-
+<p align="center">
+  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_model.png"height="400" width="400"/>
+</p>
 
 Оценка полноты, точности и аккуратности
 
-
-![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_accuracy.png)
+<p align="center">
+  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/FFNN_accuracy.png"height="400" width="400"/>
+</p>
 
 График потерь и точности для каждой модели
 
-
-![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn__epoch_20_.png)
+<p align="center">
+  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn__epoch_20_.png"height="400" width="400"/>
+</p>
 
 ![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn.png)
+<p align="center">
+  <img src="https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn.png"height="400" width="400"/>
+</p>
 
 
 
