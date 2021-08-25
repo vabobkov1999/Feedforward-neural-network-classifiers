@@ -220,6 +220,8 @@ cv2.imwrite(path_for_save, image_copy)
 ![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-ffnn.png)
 
 
+Данные полученные в результате выполнения ЛР с нестандартными картинками [Ссылка на результат FFNN ](https://github.com/vabobkov1999/Feedforward-neural-network-classifiers/tree/master/dataset/saved_ffnn)
+
 
 ### Convolutional Neural Network
 
@@ -306,6 +308,6 @@ model.add(Flatten())
 
 ![Gitlab logo](https://bmstu.codes/MorozoFF/lr-6-opc/-/raw/master/loss-accuracy-сnn__epoch_25_.png)
 
-Данные полученные в результате выполнения ЛР с нестандартными картинками [Ссылка на Google диск с данными](https://drive.google.com/drive/folders/1bCQIDeO7y4lV-IXUu9NI_t2EC_Bhh_hF?usp=sharing)
+Данные полученные в результате выполнения ЛР с нестандартными картинками [Ссылка на результат CNN ](https://github.com/vabobkov1999/Feedforward-neural-network-classifiers/tree/master/dataset/saved_cnn)
 
 Так же напоминаю для тех кому интересно выполнить задание самому или протестировать данную программу, то прошу перейти [сюда](https://drive.google.com/drive/folders/1b_molbj8z6JhHV6r178AeI1XpQezehsm?usp=sharing "Практикум по машинному обучению")
