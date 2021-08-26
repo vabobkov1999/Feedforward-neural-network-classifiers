@@ -1,5 +1,7 @@
 # Лабораторная работа №6
 
+With python 3.8, feedforward neural networks (conventional and convolutional neural networks) are developed for classifying pictures. Create the neural network architecture and train it. Classify pictures according to enhancement.
+
 Классификаторы на основе нейронных сетей прямого распространения
 ----------------------------------------------------------------
 
